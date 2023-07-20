@@ -1,0 +1,342 @@
+HACKATHON:
+
+Project Name: Calculate Trip Cost
+ 
+
+URL user: https://www.tripadvisor.in/
+
+Operating System used: Windows 11
+
+ 
+
+----------------------------------------------------------------------
+
+Detailed Description:
+
+----------------------------------------------------------------------
+
+1. Display Hotel name, total amount and charges per night for 3 holiday homes for 4 people in Nairobi for 5 days of stay from tomorrow's date;
+
+   Should have sorted the list with highest traveler rating & should have elevator/ List  access
+
+ 
+
+2.Pick one cruise line & pick a respective cruise ship under Cruises;
+
+    a. Retrieve all the languages offered and store in a List; Display the same
+
+    b. Display passengers, crew & launched year
+
+ 
+
+ 
+
+Steps of the Procedure:
+
+----------------------------------------------------------------------
+
+ 
+
+1)  Launch any browser (In this code we have used Chrome browser and Microsoft Edge browser).
+
+2)  Goto “https://www.tripadvisor.in/"
+
+3)  Read input for "Where to" list box from "input.xlsx" file and select "Nairobi" location from suggested options(It will take user to ‘Explore Nairobi’ page).
+
+4)  Click on 'Holiday Homes' page (It'll take you to the "Holiday Rentals in Nairobi" page)
+
+5)  Select 'Traveller Rating' from traveller Sort Dropdown
+
+6)  Click on 'Show All' under amenities to select 'Elevator/lift' and click Apply button
+
+7)  Select 5 days of stay from tomorrow's date.
+
+7)  Select 'Guests' and increase it to 4 and click on "Apply"
+
+8)  Display Hotel name, total amount and charges per night for 3 holiday homes
+
+9)  Print the results on console as well as in "HotelDetails.xlsx" file
+
+10) Click on 'Cruises' menu (It'll take you to the "Find the best cruise for you" page)
+
+11) Pick one cruise line & pick a respective cruise ship under Cruises
+
+12) Click on 'Search' button
+
+13) Display passengers, crew & launched year on console as well as in "cruise.xlsx" file
+
+14) Retrieve all the languages offered and store in a List; Display the same
+
+16) Close the browser
+
+ 
+
+ 
+
+ 
+
+Folders
+
+----------------------------------------------------------------------
+
+ 
+
+1) src/main/java
+
+       1)Datatables
+
+               -cruise.xlsx
+
+               -HotelDetails.xlsx
+
+               -input.xlsx
+
+               
+
+       2)PageClasses
+
+               -Cruises.java
+
+               -HolidayHomes_ResultPage.java
+
+               -HomePage.java
+
+               
+
+       3)Utilities
+
+               -BaseClass.java
+
+               -ExcelReadWrite.java
+
+               -Project.properties    
+
+       
+
+2)src/test/java
+
+        1)TestScenarios
+
+            -TestCases.java
+
+            
+
+3)Reports
+
+        1)ExtentReport.html
+
+ 
+
+4) Screenshots
+
+        1)CrusieOutput.png
+
+        2)CrusieSelection.png
+
+        3)Nairobi.png
+
+        4)RentalsInNairobi.png
+
+ 
+
+ 
+
+Data Driven Concepts
+
+-----------------------------------------------------------------------
+
+1) Properties File (Reading Data)
+
+ 
+
+2) Excel sheet (Reading and Writing Data)
+
+ 
+
+ 
+
+Concepts/Technologies/Automation Tools Used:
+
+-----------------------------------------------------------------------
+
+> Java
+
+> Eclipse
+
+> Selenium Webdriver and it's concepts.
+
+> TestNG FrameWork and  it's concepts.
+
+> Maven
+
+> POM
+
+> config.properties
+
+> Extend Report
+
+> Cross Browser Testing Concepts
+
+> Data Driven Concepts
+
+ 
+
+ 
+
+ 
+
+Key Automation Scope
+
+-----------------------------------------------------------------------
+
+ 
+
+>Handling different browser windows, search option
+
+>Validation of date controls
+
+>Capture warning message
+
+>Extract list items & store in collections
+
+>Navigating back to home page
+
+>Scrolling down in web page
+
+ 
+
+ 
+
+ 
+
+ 
+
+OUTPUT IN CONSOLE:
+
+ 
+
+===============================================
+
+              Opening the Website
+
+===============================================
+
+---------------------------------------------------------
+
+* Read Excel Successfully
+
+---------------------------------------------------------
+
+------Screenshot is taken successfully-------
+
+ 
+
+------Screenshot is taken successfully-------
+
+ 
+
+HOTEL DETAILS :
+
+ 
+
+Hotel Name  -  City/River View Retreat in the Heart of Westlands
+
+Cost for Per Night - Rs.₹6,759
+
+Total Cost - Rs.₹33,797 / 5 nights
+
+Hotel Name  -  Elegant Cosy Conquest
+
+Cost for Per Night - Rs.₹18,776
+
+Total Cost - Rs.₹93,883 / 5 nights
+
+Hotel Name  -  Fully Furnished 2 Bedroom Apartment in Lavington
+
+Cost for Per Night - Rs.₹6,008
+
+Total Cost - Rs.₹30,042 / 5 nights
+
+ 
+
+===============================================
+
+---------------------------------------------------------
+
+* Printed the Excel Successfully
+
+---------------------------------------------------------
+
+------Screenshot is taken successfully-------
+
+ 
+
+CRUISES DETAILS :
+
+ 
+
+Passengers: 2,068   
+
+Crew: 996
+
+Launched: 2010   
+
+Languages offered are:
+
+Language
+
+All languages(159)
+
+English(159)
+
+---------------------------------------------------------
+
+* Printed the Excel Successfully
+
+---------------------------------------------------------
+
+------Screenshot is taken successfully-------
+
+ 
+
+               Closing the Browser             
+
+===============================================
+
+ 
+
+===============================================
+
+Suite
+
+Total tests run: 13, Passes: 13, Failures: 0, Skips: 0
+
+===============================================
+
+ 
+
+ 
+
+ 
+
+ 
+
+                                  ----------------------------
+
+                                  |                          |
+
+                                  |      IMPORTANT NOTE      |
+
+                                  |                          |
+
+                                  ----------------------------
+
+ 
+
+    -> For multiple browsers (chrome and Edge), The browser name is read from 'config.properties' file
+
+    -> If you want to use chrome browser, please go to 'config.properties' file and set browser name as 'chrome'.
+
+    -> If you want to use edge browser, please go to 'config.properties' file and set browser name as 'edge'.
+
+    -> Then execute the Test.
